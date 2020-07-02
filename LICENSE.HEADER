@@ -15,14 +15,3 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-
-package sh.nes.diceroy
-
-import kotlinx.cli.*
-
-fun main(args: Array<String>) {
-    val parser = ArgParser("diceroy")
-    val debug by parser.option(ArgType.Boolean, shortName = "d", description = "Turns on debug mode for logging.")
-
-    parser.parse(args)
-}
